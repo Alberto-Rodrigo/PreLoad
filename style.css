@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pre-carregamento{
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#010818, #027ffd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.10s;
+}
+.efeito{
+    width: 35px;
+    height: 35px;
+    background-color: azure;
+    border-radius: 100%;
+    animation: efeito 0.5s infinite;
+}
+@keyframes efeito{
+    0%{
+        box-shadow: 0 0 0 0 white;
+    }
+    100%{
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+}
